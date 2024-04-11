@@ -1,0 +1,12 @@
+metrics:
+  - torchmetrics.classification.Accuracy
+  - torchmetrics.classification.F1Score
+  - torchmetrics.classification.AUROC
+task:
+  - binary
+num_classes:
+  - 2
+model_selection_metrics:
+    - torchmetrics.classification.Accuracy
+target:
+  - Maximize

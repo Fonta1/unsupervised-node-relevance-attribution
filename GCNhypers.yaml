@@ -1,0 +1,15 @@
+lr:
+ - 0.001
+num_layers:
+ - 2
+ - 3
+ - 4
+ - 5
+dim_embed:
+ - 32
+weight_decay:
+ - 0.001
+patience:
+ - 30
+max_epochs:
+ - 500
