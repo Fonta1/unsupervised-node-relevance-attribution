@@ -28,7 +28,7 @@ def arg_parse():
     parser_c = subparsers.add_parser('explain', help='define the explanation experiment')
     parser_c.add_argument('--name', type=str, dest="exp_name", required=True, help="Experiment name")
     parser_c.add_argument('--dataset', type=str, dest="dataset", default='Mutagenicity', help="Input dataset")
-    parser_c.add_argument('--classes', nargs="+", type=int, default=[0,1], help="Chose which GT class to explain, default [0,1]")
+    parser_c.add_argument('--classes', nargs="+", type=int, default=[1], help="Chose which GT class to explain, default [1]")
     parser_c.add_argument('--seed', type=int, dest="seed", default=109382, help="Define random seed for Python, PyTorch and Numpy")
     parser_c.add_argument('--thStrategy', type=str, dest="thStrategy", default='TopK', help="Relevance attribution strategy (Kmeans, FidelityTh, Top, BestK)")
     parser_c.add_argument('--k', type=float, dest="k", default=9, help="K for Top strategy")
