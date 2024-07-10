@@ -1,0 +1,43 @@
+dataset_properties:
+    data_path: './data/datasets'
+
+task_properties:
+    metrics:
+      - torchmetrics.classification.Accuracy
+      - torchmetrics.classification.F1Score
+      - torchmetrics.classification.AUROC
+    task:
+      - binary 
+    num_classes:
+      - 2
+    model_selection_metrics:
+      - torchmetrics.classification.Accuracy 
+    metric_target: 
+      - Maximize
+    earlyStoppingMetric:
+      - Loss
+    earlyStoppingTarget:
+      - Minimize
+    earlyStoppingMinChange:
+      - 0.00001
+
+hyper_parameters:
+    lr: #learning rate
+        - 0.001
+    nL: #nlayer
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+    dE: #dim emb
+        - 32
+    wD: #weightdecay
+        - 0.0001
+    pt: #patience
+        - 30
+    mE: #maxEpoch
+        - 500
+    bS: #batch_size
+        - 256

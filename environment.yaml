@@ -1,0 +1,16 @@
+dependencies:
+  - python=3.11
+  - ipykernel
+  - seaborn
+  - python-igraph
+  - tensorboardx
+  - torchaudio
+  - pytorch-cuda=11.8
+  - torchvision
+  - pytorch
+  - ipdb
+  - chardet
+  - torchmetrics
+  - pgmpy
+  - captum
+  - scikit-image
